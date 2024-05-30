@@ -15,6 +15,6 @@ app.get("/healthy", async (req: Request, res: Response) => {
 })
 app.use("/api/my/user", myUserRoute);
 
-app.listen(7000, () => {
+app.listen(7200, () => {
     console.log("server started on port 7000");
 })

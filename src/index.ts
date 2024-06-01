@@ -18,6 +18,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const corsOptions = {
+    origin: 'https://order-eat-app-frontend.onrender.com/', 
+    optionsSuccessStatus: 200
+};
+
 app.get("/healthy", async (req: Request, res: Response) => {
     res.send({ message: "Health OK!" });
 })

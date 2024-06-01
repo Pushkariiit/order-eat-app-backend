@@ -24,7 +24,6 @@ app.get("/healthy", async (req: Request, res: Response) => {
 app.use("/api/my/user", myUserRoute);
 app.use("/api/my/restaurant", myRestaurantRoute);
 
-const PORT = process.env.PORT || 7000;
-app.listen(PORT, () => {
-    console.log(`server started on port ${PORT}`);
+app.listen(7000, () => {
+    console.log("server started on port 7000");
 })
